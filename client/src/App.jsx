@@ -1,10 +1,12 @@
+import { AuthContextProvider } from './context/AuthContextProvider';
+import AppRouter from './router/AppRouter';
+
 function App() {
   return (
-    <div className="text-red-500 flex-col-reverse flex">
-      <div>1s</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
+    <div className="">
+      <AuthContextProvider>
+        <AppRouter></AppRouter>
+      </AuthContextProvider>
     </div>
   );
 }
